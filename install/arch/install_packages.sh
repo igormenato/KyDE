@@ -57,7 +57,7 @@ installer_packages=(
     "nwg-look"
     "qt5ct"
     "qt6ct"
-    "kvantummanager"
+    "kvantum"
 
     # QT Support
     "qt5-wayland"
