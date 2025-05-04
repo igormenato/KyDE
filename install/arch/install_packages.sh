@@ -1,4 +1,3 @@
-
 installer_packages=(
     # Desktop Environment / Window Manager
     "hyprland"
