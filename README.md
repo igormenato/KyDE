@@ -40,3 +40,7 @@ The script will install the following packages and the corresponding configurati
 - qt6-wayland
 
 You can find all shipped configurations here: https://github.com/igormenato/KyDE/tree/main/dotfiles
+
+## Acknowledgments
+
+This project is based on [hyprland-starter](https://github.com/mylinuxforwork/hyprland-starter/) and [simple-hyprland](https://github.com/gaurav23b/simple-hyprland), which provided excellent foundations for creating this Hyprland-based desktop environment.
