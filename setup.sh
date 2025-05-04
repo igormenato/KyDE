@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 # Functions for Setup
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 
 distro=""
 installer=""
@@ -88,9 +88,9 @@ _installPackagesFedora() {
     sudo dnf install --assumeyes "${toInstall[@]}"
 }
 
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 # Packages
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 
 # Required packages for the installer on Arch
 installer_packages_arch=(
@@ -113,19 +113,19 @@ NONE='\033[0m'
 # Header
 echo -e "${GREEN}"
 cat <<"EOF"
- ____       _               
-/ ___|  ___| |_ _   _ _ __  
-\___ \ / _ \ __| | | | '_ \ 
+ ____       _
+/ ___|  ___| |_ _   _ _ __
+\___ \ / _ \ __| | | | '_ \
  ___) |  __/ |_| |_| | |_) |
-|____/ \___|\__|\__,_| .__/ 
-                     |_|    
+|____/ \___|\__|\__,_| .__/
+                     |_|
 
 EOF
-echo "for KyDE Hyprland Starter"
+echo "for KyDE Dotfiles"
 echo
 echo -e "${NONE}"
 
-echo "This script will download the KyDE Hyprland Dotfiles and start the installation."
+echo "This script will download the KyDE Dotfiles and start the installation."
 echo
 while true; do
     read -p "DO YOU WANT TO START THE INSTALLATION NOW? (Yy/Nn): " yn
@@ -134,7 +134,7 @@ while true; do
             echo "Installation started."
             echo
         break;;
-        [Nn]* ) 
+        [Nn]* )
             echo "Installation canceled."
             exit;
         break;;
@@ -142,9 +142,9 @@ while true; do
     esac
 done
 
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 # Detect Distribution
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 _detectDistro
 if [ -z $distro ] ;then
     echo "ERROR: Your Linux distribution could not be detected or is not supported."
@@ -159,26 +159,26 @@ if [ -z $distro ] ;then
     elif [ "$version" == "rolling-release" ] ;then
         echo ":: Installer for Fedora"
         distro="fedora"
-        installer="fedora"    
+        installer="fedora"
     elif [ "$version" == "cancel" ] ;then
         echo ":: Setup canceled"
-        exit 130    
+        exit 130
     else
         echo ":: Setup canceled"
         exit 130
     fi
 fi
 
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 # Installation for Fedora
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 if [ "$installer" == "fedora" ] ;then
     _installPackagesFedora "${installer_packages_fedora[@]}";
 fi
 
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 # Installation for Arch
-# ----------------------------------------------------- 
+# -----------------------------------------------------
 if [ "$installer" == "arch" ] ;then
     _installPackagesPacman "${installer_packages_arch[@]}";
 fi
@@ -193,17 +193,17 @@ fi
 cd ~/Downloads
 
 # Remove existing folder
-if [ -d ~/Downloads/hyprland-starter ] ;then
-    rm -rf ~/Downloads/hyprland-starter
+if [ -d ~/Downloads/KyDE ] ;then
+    rm -rf ~/Downloads/KyDE
     echo ":: Existing installation folder removed"
 fi
 
 # Clone the packages
-git clone --depth 1 https://github.com/mylinuxforwork/hyprland-starter.git
+git clone --depth 1 https://github.com/igormenato/KyDE.git
 echo ":: Installation files cloned into Downloads folder"
 
 # Change into the folder
-cd hyprland-starter
+cd KyDE
 
 # Start the script
 ./install.sh
