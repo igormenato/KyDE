@@ -17,7 +17,7 @@ KyDE can be installed on real hardware (bare metal) or tested in a virtual machi
 Before starting, make sure you have a minimal installation of Arch, Fedora, or Nobara Linux with internet access and a working user account.
 
 ```
-
+bash <(curl -s https://raw.githubusercontent.com/igormenato/KyDE/main/setup.sh)
 ```
 
 > Hyprland does not officially support NVIDIA hardware. But many users have reported a successful installation. Please read: https://wiki.hyprland.org/Nvidia/
