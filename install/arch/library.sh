@@ -44,7 +44,7 @@ _installPackagesYay() {
     toInstall=();
     for pkg; do
         if [[ $(_isInstalledYay "${pkg}") == 0 ]]; then
-            echo ":: ${pkg} is already installed.";
+            echo "${pkg} is already installed.";
             continue;
         fi;
         toInstall+=("${pkg}");
