@@ -18,14 +18,17 @@ echo ":: Dotfiles installed in ~/.config/"
 
 # Install SDDM theme
 echo ":: Installing Catppuccin Mocha SDDM theme..."
-unzip ~/.config/KyDE/assets/themes/sddm-catppuccin-mocha.zip /usr/share/sddm/themes/
+sudo mkdir -p /usr/share/sddm/themes/
+sudo unzip -o ~/.config/KyDE/assets/themes/sddm-catppuccin-mocha.zip -d /usr/share/sddm/themes/
 
 # Install GTK and icon themes
 echo ":: Installing Catppuccin Mocha GTK theme..."
-tar -xvf ~/.config/KyDE/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
+sudo mkdir -p /usr/share/themes/
+sudo tar -xf ~/.config/KyDE/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
 
 echo ":: Installing Tela Circle Dracula icon theme..."
-tar -xvf ~/.config/KyDE/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/
+sudo mkdir -p /usr/share/icons/
+sudo tar -xf ~/.config/KyDE/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/
 
 # Add instructions to configure theming
 print_info "\nPost-installation instructions:"
