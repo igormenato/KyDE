@@ -1,6 +1,6 @@
 # KyDE Dotfiles 1.0.0
 
-KyDE is a complete Hyprland configuration focused on minimalism and a tiling window management workflow. It includes all necessary dotfiles and setup scripts to provide a ready-to-use Wayland desktop on supported Linux distributions.
+KyDE is a complete Hyprland configuration focused on minimalism and a tiling window management workflow. It includes dotfiles and setup scripts to provide a ready-to-use Wayland desktop on supported Linux distributions.
 
 ## Requirements
 
