@@ -1,0 +1,42 @@
+# KyDE Dotfiles 1.0.0
+
+KyDE is a complete Hyprland configuration focused on minimalism and a tiling window management workflow. It includes all necessary dotfiles and setup scripts to provide a ready-to-use Wayland desktop on supported Linux distributions.
+
+## Requirements
+
+Ths script supports the following distributions:
+
+- Arch Linux
+- Fedora Linux
+- Nobara Linux
+
+## Installation
+
+KyDE can be installed on real hardware (bare metal) or tested in a virtual machine using QEMU/KVM with 3D acceleration enabled.
+
+Before starting, make sure you have a minimal installation of Arch, Fedora, or Nobara Linux with internet access and a working user account.
+
+```
+
+```
+
+> Hyprland does not officially support NVIDIA hardware. But many users have reported a successful installation. Please read: https://wiki.hyprland.org/Nvidia/
+
+## Packages
+
+The script will install the following packages and the corresponding configurations:
+
+- Window Manager: hyprland
+- Status Bar: waybar
+- Launcher: tofi
+- Browser: firefox
+- Terminal: kitty
+- Notification Service: dunst
+- File Manager: dolphin
+- Idle Manager: hypridle
+- Lock screen: hyprlock
+- xdg-desktop-portal-hyprland
+- qt5-wayland
+- qt6-wayland
+
+You can find all shipped configurations here: https://github.com/igormenato/KyDE/tree/main/dotfiles
