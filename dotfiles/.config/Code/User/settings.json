@@ -1,0 +1,93 @@
+{
+  // VSCode
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.icons": false,
+  "update.mode": "start",
+
+  // Security
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "security.workspace.trust.enabled": false,
+
+  // Window
+  "window.title": "${dirty}${rootName}",
+  "window.titleBarStyle": "custom",
+  "window.customTitleBarVisibility": "never",
+  //"window.menuBarVisibility": "toggle",
+  "window.autoDetectColorScheme": false,
+
+  // Extensions
+  "extensions.autoCheckUpdates": true,
+  "extensions.autoUpdate": true,
+  "extensions.ignoreRecommendations": true,
+
+  // Zen Mode
+  "zenMode.centerLayout": false,
+
+  // Explorer
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+
+  // Workbench
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.editor.labelFormat": "short",
+  "workbench.list.smoothScrolling": true,
+
+  // Editor
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontWeight": "normal",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.rulers": [80, 120],
+  "editor.glyphMargin": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.smoothScrolling": true,
+  "editor.renderLineHighlight": "gutter",
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.parameterHints.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.addMissingImports": "explicit"
+  },
+
+  // Terminal
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+
+  // Symbols Icon Theme
+  "symbols.hidesExplorerArrows": false,
+  "symbols.files.associations": {
+    "*.module.ts": "nest",
+    "*.guard.ts": "typescript",
+    "*.spec.ts": "ts-test",
+    "*.e2e-spec.ts": "ts-test",
+    "vitest.config.e2e.ts": "vite",
+    ".env.example": "gear"
+  },
+
+  // Git
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false
+}
