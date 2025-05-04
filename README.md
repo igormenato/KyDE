@@ -7,8 +7,8 @@ KyDE is a complete Hyprland configuration focused on minimalism and a tiling win
 Ths script supports the following distributions:
 
 - Arch Linux
-- Fedora Linux
-- Nobara Linux
+- Fedora Linux (unmaintained)
+- Nobara Linux (unmaintained)
 
 ## Installation
 
