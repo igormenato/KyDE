@@ -45,7 +45,6 @@ source install/includes/preparation.sh
 # -----------------------------------------------------
 source install/$installer/install_packages.sh
 
-
 # -----------------------------------------------------
 # Create Backup
 # -----------------------------------------------------
@@ -77,7 +76,12 @@ source install/includes/kvm.sh
 source install/includes/copy.sh
 
 # -----------------------------------------------------
-# Enable SDDM
+# Shell
+# -----------------------------------------------------
+source install/includes/shell.sh
+
+# -----------------------------------------------------
+# SDDM
 # -----------------------------------------------------
 source install/includes/sddm.sh
 
