@@ -57,7 +57,7 @@ _installYay() {
         SCRIPT=$(realpath "$0")
         temp_path=$(dirname "$SCRIPT")
         echo $temp_path
-        git clone https://aur.archlinux.org/yay-bin.git ~/yay-git
+        git clone https://aur.archlinux.org/yay-bin.git ~/yay-bin
         cd ~/yay-bin
         makepkg -si
         cd $temp_path
